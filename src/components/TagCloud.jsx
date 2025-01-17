@@ -32,10 +32,11 @@ const TagCloud = () => {
       justify-content: center;
       align-items: center;
       padding: 20px 0;
-      background-color: #1a202c;
+      background-color: black;
       max-width: 100%;
       margin: 0 auto;
       position: relative;
+      padding-bottom: 85px;
     }
 
     .tag-container {
@@ -53,38 +54,41 @@ const TagCloud = () => {
       display: flex;
       flex-wrap: nowrap;
       gap: 10px;
+      transform: translateX(0); /* Initial position in the middle */
     }
 
     @keyframes slideLeft {
       0% {
-        transform: translateX(100%);
+        transform: translateX(0); /* Start in the middle */
       }
       100% {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* Slide left */
       }
     }
 
     @keyframes slideRight {
       0% {
-        transform: translateX(-100%);
+        transform: translateX(0); /* Start in the middle */
       }
       100% {
-        transform: translateX(100%);
+        transform: translateX(100%); /* Slide right */
       }
     }
 
     .tag {
-      background-color: #2d3748;
+      background-color: black;
       padding: 10px 20px;
       border-radius: 12px;
       color: white;
       font-size: 14px;
       font-weight: 600;
       transition: background-color 0.3s ease;
+      white-space: nowrap;
     }
 
     .tag:hover {
-      background-color: #4a5568;
+      background-color: white;
+      color: black
     }
 
     /* Row 1: Left to right */
@@ -104,7 +108,7 @@ const TagCloud = () => {
   `}
             </style>
 
-            <div className="tag-list">
+            <div className="tag-list pt-6 pb-6">
                 {/* Row 1: Left to Right */}
                 <div className="tag-container row1">
                     <div className="tag-slider">
