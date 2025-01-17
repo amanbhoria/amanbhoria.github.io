@@ -1,5 +1,6 @@
 // Home.jsx
 import Blogs from '../components/Blogs';
+import TagCloud from '../components/TagCloud.jsx';
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
                 Welcome to My Portfolio
             </h1>
             <Blogs />
+            <TagCloud />
         </div>
     );
 };
