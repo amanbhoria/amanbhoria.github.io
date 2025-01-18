@@ -32,6 +32,7 @@
   position: relative;
   mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  animation: slideIn 5s forwards;
 }
 
 .tag-slider {
@@ -77,17 +78,17 @@
 
 /* Row 1: Left to right */
 .row1 .tag-slider {
-  animation: slideLeft 60s linear infinite;
+  animation: slideLeft 120s linear infinite;
 }
 
 /* Row 2: Right to left */
 .row2 .tag-slider {
-  animation: slideRight 60s linear infinite;
+  animation: slideRight 120s linear infinite;
 }
 
 /* Row 3: Left to right */
 .row3 .tag-slider {
-  animation: slideLeft 60s linear infinite;
+  animation: slideLeft 120s linear infinite;
 }
 
 /* index.css or App.css */

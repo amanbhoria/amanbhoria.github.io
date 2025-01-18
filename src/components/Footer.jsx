@@ -55,7 +55,7 @@ export default function Example() {
     return (
         <footer className="bg-white">
             <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-                <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
+                {/* <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
                     <div>
                         <h3 className="text-sm/6 font-semibold text-gray-900">Subscribe to our newsletter</h3>
                         <p className="mt-2 text-sm/6 text-gray-600">
@@ -84,7 +84,7 @@ export default function Example() {
                             </button>
                         </div>
                     </form>
-                </div>
+                </div> */}
                 <div className="mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
                     <div className="flex gap-x-6 md:order-2">
                         {navigation.social.map((item) => (
@@ -95,7 +95,7 @@ export default function Example() {
                         ))}
                     </div>
                     <p className="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">
-                        &copy; {new Date().getFullYear()} Your Company, Inc. All rights reserved.
+                        &copy; {new Date().getFullYear()} Aman Bhoria
                     </p>
                 </div>
             </div>
