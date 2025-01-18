@@ -6,6 +6,8 @@
   "type": "module",
   "homepage": "https://amanbhoria.github.io/dev-portfolio/",
   "author": "Aman Bhoria",
+  "main": "main.tsx",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/amanbhoria/dev-portfolio.git"
