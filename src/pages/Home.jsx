@@ -4,6 +4,7 @@ import About from "../components/About.jsx";
 import Blogs from "../components/Blogs";
 import GitHubRepos from "../components/GithubRepos.jsx";
 import TagCloud from "../components/TagCloud.jsx";
+import Contact from "./Contact.jsx";
 
 const Home = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -52,6 +53,7 @@ const Home = () => {
             <TagCloud />
             <About />
             <Blogs />
+            <Contact />
 
             {/* <GitHubRepos /> */}
         </div>

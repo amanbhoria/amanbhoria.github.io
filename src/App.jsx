@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './components/About';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <ScrollToTop />
       <Footer />
     </Router>
   );

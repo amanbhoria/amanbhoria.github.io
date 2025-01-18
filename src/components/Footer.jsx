@@ -95,7 +95,7 @@ export default function Example() {
                         ))}
                     </div>
                     <p className="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">
-                        &copy; {new Date().getFullYear()} Aman Bhoria
+                        &copy; {new Date().getFullYear()} Hand-crafted and Made with ❤️ by <b>Aman Bhoria</b>
                     </p>
                 </div>
             </div>
