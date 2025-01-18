@@ -4,7 +4,7 @@
   "description": "A developer portfolio website.",
   "private": true,
   "type": "module",
-  "homepage": "https://amanbhoria.github.io/",
+  "homepage": "https://amanbhoria.github.io/dev-portfolio/",
   "author": "Aman Bhoria",
   "repository": {
     "type": "git",
