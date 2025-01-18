@@ -15,7 +15,7 @@ export const FloatingDock = ({
 }) => {
     return (<>
         <FloatingDockDesktop items={items} className={desktopClassName} />
-        <FloatingDockMobile items={items} className={mobileClassName} />
+        {/* <FloatingDockMobile items={items} className={mobileClassName} /> */}
     </>);
 };
 
@@ -122,7 +122,7 @@ function IconContainer({
     const [hovered, setHovered] = useState(false);
 
     return (
-        (<a href={href} style={{ behavior: 'smooth' }}>
+        (<button onClick={() => scrollToSection(href)} style={{ behavior: 'smooth' }}>
             <motion.div
                 ref={ref}
                 style={{ width, height }}
@@ -146,6 +146,6 @@ function IconContainer({
                     {icon}
                 </motion.div>
             </motion.div>
-        </a>)
+        </button>)
     );
 }

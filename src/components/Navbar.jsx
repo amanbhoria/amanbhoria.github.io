@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHome, FaTerminal, FaCogs, FaTwitter, FaGithub, FaExchangeAlt } from "react-icons/fa";
+import { FaHome, FaTerminal, FaCogs, FaTwitter, FaGithub, FaExchangeAlt, FaUser } from "react-icons/fa";
 import { FloatingDock } from "./ui/floating-dock.jsx";
 import { FcAbout, FcContacts } from "react-icons/fc";
 import { FaX } from "react-icons/fa6";
@@ -15,12 +15,12 @@ export default function Navbar() {
         {
             title: "Contact",
             icon: <FcContacts className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-            href: "#contact",
+            href: "contact",
         },
         {
             title: "About",
-            icon: <FcAbout className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-            href: "#about",
+            icon: <FaUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+            href: "about",
         },
         {
             title: "X",
