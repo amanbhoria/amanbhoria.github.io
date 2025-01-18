@@ -26,7 +26,7 @@ const navigation = {
         },
         {
             name: 'LinkedIn',
-            href: 'linkdin.com/in/amanbhoria',
+            href: 'https://linkedin.com/in/amanbhoria',
             icon: (props) => (
                 <FaLinkedin
                     {...props}
