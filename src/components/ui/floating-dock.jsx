@@ -19,7 +19,14 @@ export const FloatingDock = ({
     </>);
 };
 
-const scrollToSection = (id) => {
+const scrollToSection = (id, type) => {
+
+    if (type == "external") {
+        let href = id;
+        window.open(href, "_blank");
+        return;
+    }
+
     const section = document.getElementById(id);
     if (section) {
         section.scrollIntoView({ behavior: "smooth" });
@@ -81,7 +88,8 @@ function IconContainer({
     mouseX,
     title,
     icon,
-    href
+    href,
+    type
 }) {
     let ref = useRef(null);
 
@@ -122,7 +130,7 @@ function IconContainer({
     const [hovered, setHovered] = useState(false);
 
     return (
-        (<button onClick={() => scrollToSection(href)} style={{ behavior: 'smooth' }}>
+        (<button onClick={() => scrollToSection(href, type)}>
             <motion.div
                 ref={ref}
                 style={{ width, height }}
@@ -146,6 +154,6 @@ function IconContainer({
                     {icon}
                 </motion.div>
             </motion.div>
-        </button>)
+        </button >)
     );
 }

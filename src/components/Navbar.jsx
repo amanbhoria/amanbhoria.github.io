@@ -10,27 +10,32 @@ export default function Navbar() {
         {
             title: "Home",
             icon: <FaHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+            type: "section",
             href: "#",
         },
         {
             title: "Contact",
             icon: <FcContacts className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
             href: "contact",
+            type: "section",
         },
         {
             title: "About",
             icon: <FaUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
             href: "about",
+            type: "section",
         },
         {
             title: "X",
             icon: <FaX className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
             href: "https://www.x.com/be_creative007",
+            type: "external",
         },
         {
             title: "GitHub",
             icon: <FaGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
             href: "https://www.github.com/amanbhoria",
+            type: "external",
         },
     ];
 
