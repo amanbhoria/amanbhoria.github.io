@@ -9,12 +9,33 @@ const Home = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Simulate a loading process (you can replace this with an actual condition)
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 0); // Simulate 1.5 seconds of loading
+        // Function to check if all resources are loaded
+        const checkResourcesLoaded = async () => {
+            // Wait for all images to load
+            const images = Array.from(document.images);
+            await Promise.all(
+                images.map(
+                    (img) =>
+                        new Promise((resolve) => {
+                            if (img.complete) {
+                                resolve(); // Image already loaded
+                            } else {
+                                img.onload = resolve;
+                                img.onerror = resolve; // Resolve even if loading fails
+                            }
+                        })
+                )
+            );
 
-        return () => clearTimeout(timer);
+            // Simulate additional loading for API calls or other resources
+            // For example, you can fetch data here
+            // await fetchData();
+
+            // Stop the loader once all content is ready
+            setIsLoading(false);
+        };
+
+        checkResourcesLoaded();
     }, []);
 
     if (isLoading) {
