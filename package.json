@@ -1,8 +1,15 @@
 {
-  "name": "my-portfolio",
+  "name": "dev-portfolio",
+  "version": "1.0.0",
+  "description": "A developer portfolio website.",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "homepage": "https://amanbhoria.github.io/",
+  "author": "Aman Bhoria",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amanbhoria/dev-portfolio.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
