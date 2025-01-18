@@ -7,15 +7,13 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className='main-app-container'>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
