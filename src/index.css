@@ -43,7 +43,7 @@ body {
 
 .contact-div {
   min-height: 100vh;
-  background: url('../public/contact-bg.webp');
+  background: url('/contact-bg.webp');
 }
 
 .tag-slider {
