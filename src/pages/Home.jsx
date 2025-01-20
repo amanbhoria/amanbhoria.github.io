@@ -10,39 +10,39 @@ import { Image, Breathing, Shimmer } from "react-shimmer";
 const Home = () => {
     const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        // Function to check if all resources are loaded
-        const checkResourcesLoaded = async () => {
-            // Wait for all images to load
-            const images = Array.from(document.images);
-            await Promise.all(
-                images.map(
-                    (img) =>
-                        new Promise((resolve) => {
-                            if (img.complete) {
-                                resolve(); // Image already loaded
-                            } else {
-                                img.onload = resolve;
-                                img.onerror = resolve; // Resolve even if loading fails
-                            }
-                        })
-                )
-            );
+    // useEffect(() => {
+    //     // Function to check if all resources are loaded
+    //     const checkResourcesLoaded = async () => {
+    //         // Wait for all images to load
+    //         const images = Array.from(document.images);
+    //         await Promise.all(
+    //             images.map(
+    //                 (img) =>
+    //                     new Promise((resolve) => {
+    //                         if (img.complete) {
+    //                             resolve(); // Image already loaded
+    //                         } else {
+    //                             img.onload = resolve;
+    //                             img.onerror = resolve; // Resolve even if loading fails
+    //                         }
+    //                     })
+    //             )
+    //         );
 
-            // Simulate additional loading for API calls or other resources
-            // For example, you can fetch data here
-            // await fetchData();
+    //         // Simulate additional loading for API calls or other resources
+    //         // For example, you can fetch data here
+    //         // await fetchData();
 
-            // Stop the loader once all content is ready
-            setIsLoading(false);
-        };
+    //         // Stop the loader once all content is ready
+    //         setIsLoading(false);
+    //     };
 
-        checkResourcesLoaded();
-    }, []);
+    //     checkResourcesLoaded();
+    // }, []);
 
-    if (isLoading) {
-        return <Loader />;
-    }
+    // if (isLoading) {
+    //     return <Loader />;
+    // }
 
     return (
         <div>
