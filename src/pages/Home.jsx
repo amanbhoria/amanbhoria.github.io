@@ -47,7 +47,7 @@ const Home = () => {
         <div>
             <img
                 className="w-full h-auto pt-24 grayscale brightness-90 contrast-110 hover:grayscale-0 hover:brightness-100 hover:contrast-100 transition-all duration-300"
-                src="/banner.jpg"
+                src="/banner2.webp"
                 alt="banner"
             />
             <TagCloud />

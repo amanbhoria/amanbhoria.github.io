@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
     return (
         <section id="about">
-            <div className="bg-white py-24 sm:py-32">
+            <div className="bg-white pt-24 sm:pt-32">
 
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0">
@@ -25,7 +25,7 @@ const About = () => {
                     </div>
                     <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                         <img
-                            src="./techBanner.png" // Replace with your image URL
+                            src="./techBanner.webp" // Replace with your image URL
                             alt="Aman Bhoria"
                             className="rounded-lg shadow-lg"
                         />

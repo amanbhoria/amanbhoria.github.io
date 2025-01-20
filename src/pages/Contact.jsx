@@ -4,7 +4,7 @@ import { FaBuilding, FaPhone, FaEnvelope } from 'react-icons/fa';
 export default function Contact() {
     return (
         <section id='contact'>
-            <div className="relative isolate bg-black">
+            <div className="relative contact-div isolate bg-black">
                 <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
                     <div className="px-6 pb-20 pt-24 sm:pt-32 lg:px-8 lg:py-48 lg:order-2">
                         <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
