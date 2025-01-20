@@ -46,12 +46,12 @@ const Home = () => {
 
     return (
         <div>
-            {/* <img
+            <img
                 className="w-full pt-24 h-auto grayscale brightness-90 contrast-110 hover:grayscale-0 hover:brightness-100 hover:contrast-100 transition-all duration-300"
                 src="./banner2.webp"
                 alt="banner"
-            /> */}
-            <div className="pt-20"><Image
+            />
+            {/* <div className="pt-20"><Image
                 className="w-full pt-24 h-auto grayscale brightness-90 contrast-110 hover:grayscale-0 hover:brightness-100 hover:contrast-100 transition-all duration-300"
                 src="./banner2.webp"
                 fallback={
@@ -62,7 +62,7 @@ const Home = () => {
                     />
                 }
                 alt="banner"
-            /></div>
+            /></div> */}
 
             <TagCloud />
             <About />
