@@ -19,9 +19,7 @@ export default function Contact() {
                                         <FaBuilding className="h-7 w-6 text-gray-400" />
                                     </dt>
                                     <dd>
-                                        New Delhi, 110089
-                                        <br />
-                                        India
+                                        New Delhi, India
                                     </dd>
                                 </div>
                                 <div className="flex gap-x-4">
@@ -52,7 +50,7 @@ export default function Contact() {
                                     href='https://tally.so/r/31DQ1p'
                                     target='_blank'
                                     type="button"
-                                    className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                                    className="outline-offset-8 outline-2 outline-gray-500 outline rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                                 >
                                     Contact Me
                                 </a>
