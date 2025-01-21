@@ -69,7 +69,7 @@ const TagCloud = () => {
                 `}
             </style>
 
-            <div className="tag-list pt-6 pb-6">
+            <div className="tag-list pb-6">
                 {/* Row 1: Left to Right */}
                 <div className={`tag-container row1`} key={`row1-${animationKey}`}>
                     <div className="tag-slider">

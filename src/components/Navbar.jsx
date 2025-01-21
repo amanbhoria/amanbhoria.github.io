@@ -40,7 +40,7 @@ export default function Navbar() {
     ];
 
     return (
-        <div className="flex items-center pt-20 w-full">
+        <div className="flex items-center pt-20 pb-6 w-full">
             <FloatingDock
                 mobileClassName="translate-y-20"
                 items={links}
