@@ -5,7 +5,6 @@ import Blogs from "../components/Blogs";
 import GitHubRepos from "../components/GithubRepos.jsx";
 import TagCloud from "../components/TagCloud.jsx";
 import Contact from "./Contact.jsx";
-import { Image, Breathing, Shimmer } from "react-shimmer";
 
 const Home = () => {
     const [isLoading, setIsLoading] = useState(true);
