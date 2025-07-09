@@ -1,3 +1,5 @@
+import { GlowingEffect } from "./ui/glowing-effect";
+
 const About = () => {
     return (
         <section id="about">
@@ -23,17 +25,45 @@ const About = () => {
                             When I&apos;m not coding, you&apos;ll find me producing music, diving into creative projects, or exploring the world around me. My journey as a developer is driven by a desire to continuously learn, collaborate, and push boundaries.
                         </p>
                     </div>
-                    <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                        <img
-                            src="./techBanner.webp"
-                            alt="Aman Bhoria"
-                            className="rounded-lg shadow-lg"
-                        />
-                    </div>
+                    
+    <GridItem
+        area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
+      >
+        
+        </GridItem>
                 </div>
             </div>
         </section>
     );
 };
+
+const GridItem = ({ area, icon, title, description }) => {
+    return (
+      <li className={`min-h-[14rem] list-none ${area}`}>
+        <div className="relative h-full rounded-2xl border mt-10">
+          <GlowingEffect
+            blur={0}
+            borderWidth={3}
+            spread={80}
+            glow={true}
+            disabled={false}    
+            proximity={64}
+            inactiveZone={0.01}
+          />
+          <div className="border-0.75 gap-6 relative flex h-full flex-col p-3 md:p-3 justify-between overflow-hidden rounded-xl">
+            <div className="relative flex flex-1 flex-col justify-between">
+              <div className="mx-auto lg:mx-0 lg:max-w-none">
+                        <img
+                            src="./techBanner.webp"
+                            alt="Aman Bhoria"
+                            className="rounded-lg shadow-lg"
+                        />
+                </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    );
+  };
 
 export default About;
